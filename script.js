@@ -11,11 +11,20 @@ console.log(timeBlockList);
 
 const currentHr = moment().hour();
 console.log(currentHr);
-
-for(var i= 9; i < 17; i++){
-if(i<currentHr){
-  console.log('past')
-  console.log(i)
-  $('#'+ i).addClass('past')                    
-}
-}
+for (var i = 0; i < timeBlockList.length; i++) {
+  if (timeBlockList[i].dataset.time == currentHr) {
+      timeBlockList[i].classList.remove("past");
+      timeBlockList[i].classList.remove("future");
+      timeBlockList[i].classList.add("present");
+  };
+  if (timeBlockList[i].dataset.time > currentHr) {
+      timeBlockList[i].classList.remove("past");
+      timeBlockList[i].classList.remove("present");
+      timeBlockList[i].classList.add("future");
+  };
+  if (timeBlockList[i].dataset.time < currentHr) {
+      timeBlockList[i].classList.remove("present");
+      timeBlockList[i].classList.remove("future");
+      timeBlockList[i].classList.add("past");
+  }
+};

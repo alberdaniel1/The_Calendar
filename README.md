@@ -7,11 +7,11 @@ Created a schedule for workday hours (between 9 AM and 6pm) that allows users to
 ## Installation
 There is no installation required for this website. Simply click on the link below and you will be taken directly to the website!   
 
-Link:    
+Link: https://alberdaniel1.github.io/The_Calendar/    
 
 When you click on the link, you should see a webpage similar to the one below.  
 
-![Workday Scheduler Homepage]()
+![Workday Scheduler Homepage](./images/Screenshot%202023-05-30%20at%2010.12.59%20PM.png)
 
 
 
